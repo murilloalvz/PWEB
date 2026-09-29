@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa h2 {
+    color: white;
+    font-size: 40px;
+}
+
+/* Breakpoints
+   até 420px ............ cinza
+   421px até 768px ...... laranja
+   769px até 1024px ..... rosa
+   1025px até 1080px .... vermelho
+   1081px até 1366px .... roxo
+   1367px até 1920px .... amarelo
+   maior que 1920px ..... verde
+*/
+
+@media screen and (max-width: 420px) {
+    .caixa {
+        background-color: gray;
+    }
+
+    .caixa h2::before {
+        content: "Cinza";
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: orange;
+    }
+
+    .caixa h2::before {
+        content: "Laranja";
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: magenta;
+    }
+
+    .caixa h2::before {
+        content: "Rosa";
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: red;
+    }
+
+    .caixa h2::before {
+        content: "Vermelho";
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: purple;
+    }
+
+    .caixa h2::before {
+        content: "Roxo";
+    }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: gold;
+    }
+
+    .caixa h2::before {
+        content: "Amarelo";
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .caixa {
+        background-color: green;
+    }
+
+    .caixa h2::before {
+        content: "Verde";
+    }
+}
