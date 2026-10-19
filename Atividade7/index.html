@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Murillo Alves Lourenço">
+    <meta name="description" content="Jogo Pedra, Papel ou Tesoura contra o computador">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Pedra, Papel ou Tesoura</title>
+</head>
+<body>
+    <div class="jogo">
+        <h1>Pedra, Papel ou Tesoura</h1>
+        <p>Escolha uma opção para jogar contra o computador:</p>
+
+        <div class="opcoes">
+            <button type="button" onclick="jogar('pedra')">Pedra</button>
+            <button type="button" onclick="jogar('papel')">Papel</button>
+            <button type="button" onclick="jogar('tesoura')">Tesoura</button>
+        </div>
+
+        <div class="escolhas">
+            <p>Você escolheu: <span id="escolhaUsuario">-</span></p>
+            <p>Computador escolheu: <span id="escolhaComputador">-</span></p>
+        </div>
+
+        <h2 id="resultado"></h2>
+        <p id="explicacao"></p>
+
+        <div class="placar">
+            <p>Você: <span id="pontosUsuario">0</span></p>
+            <p>Empates: <span id="empates">0</span></p>
+            <p>Computador: <span id="pontosComputador">0</span></p>
+        </div>
+
+        <button type="button" class="reiniciar" onclick="reiniciar()">Zerar placar</button>
+    </div>
+</body>
+</html>
