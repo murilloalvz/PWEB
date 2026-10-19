@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+}
+
+.jogo {
+    width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #1f4e79;
+}
+
+.opcoes button {
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcoes button:hover {
+    background-color: #2e75b6;
+}
+
+.escolhas span {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#resultado {
+    color: #b23a2f;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #dddddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.placar span {
+    font-weight: bold;
+}
+
+.reiniciar {
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
